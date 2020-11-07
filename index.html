@@ -324,11 +324,22 @@
         <div class="row  d-flex align-items-stretch">
 
 <p>
-  <h2>As of market close September 17, 2020</h2>
-    <img src ="JuneVI.png"
-         alt ="As of close September 17, 2020" 
-         style = "width:1100px;height:420px" > <p>
-          <p> These investments assume a $10,000 purchase of the recommended stock at the time of reccomendation and displays the theoretical total return since the recommendation. 
+  <h2>As of market close
+    <script>
+      var today = new Date();
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      var yyyy = today.getFullYear();
+
+      today = mm + '/' + dd + '/' + yyyy;
+      document.write(today);
+    </script>
+  </h2></p>
+
+  <p><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSOtwMIuMh98nE9DGigmxHz__muQIBzu7PddW4FldTKuD64AqG6hXueOTVsC0FEMt6P2LMPK5oeuWnL/pubhtml?gid=1369657028&amp;range=A1:G7" width="692" height="220";single=true&amp;widget=true&amp;headers=false"></iframe><p>
+  
+  <p> These investments assume a $10,000 purchase of the recommended stock at the time of reccomendation and displays the theoretical total return since the recommendation. 
+  
   </p>
 
 </div>
